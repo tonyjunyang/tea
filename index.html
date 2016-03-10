@@ -42,11 +42,15 @@
         <li><a href="#">茶文化</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">茶品牌 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">普洱茶</a></li>
-            <li><a href="#">龙井</a></li>
-            <li><a href="#">铁观音</a></li>
-            <li role="separator" class="divider"></li>
+          <ul class="dropdown-menu" role="menu">
+           <!--  <li><a href="#feature-tab" data-tab="tab-a">普洱茶</a></li>
+            <li><a href="#feature-tab" data-tab="tab-b">龙井茶</a></li>
+            <li><a href="#feature-tab" data-tab="tab-c">铁观音</a></li>
+            <li role="separator" class="divider"></li> -->
+
+            <li class="active"><a href="#tab-a" role="tab" data-toggle="tab">普洱茶</a></li>
+      <li><a href="#tab-b" role="tab" data-toggle="tab">龙井茶</a></li>
+        <li><a href="#tab-c" role="tab" data-toggle="tab">铁观音</a></li>
 
 <!--             <li><a href="#">Separated link</a></li>
  -->            <!-- <li role="separator" class="divider"></li> -->
@@ -164,6 +168,7 @@
   <p>普洱茶是以云南省一定区域内的云南大叶种晒青毛茶为原料，经过后发酵加工成的散茶和紧压茶。其外形色泽褐红；内质汤色红浓明亮，香气独特沉香，滋味醇厚回甘，叶底褐红。
     
   </p>
+  <p><a class="btn btn-default" href="#" role="button">订购</a></p>
   </div>
   <div class="col-md-4">
 <h2>龙井茶</h2>
@@ -172,25 +177,27 @@
 <p>
         龙井茶是汉族传统名茶，著名绿茶之一。产于浙江杭州西湖龙井村一带，已有一千二百余年历史。龙井茶色泽翠绿，香气浓郁，甘醇爽口，形如雀舌，即有“色绿、香郁、味甘、形美”四绝的特点。
       </p>
+      <p><a class="btn btn-default" href="#" role="button">订购</a></p>
   </div>
   <div class="col-md-4">
 <h2>铁观音</h2>
 
  <img src="images/tie.jpg">
       <p>铁观音原是茶树品种名，由于它适制乌龙茶，其乌龙茶成品遂亦名为铁观音。所谓铁观音茶即以铁观音品种茶树制成的乌龙茶，亦有一种说法称“铁观音”名称乃乾隆皇帝所赐。</p>
+
   </div>
 </div>
 
  <hr class="feature-divider">
 
     <ul class="nav nav-tabs" role="tablist" id="feature-tab">
-        <li class="active"><a href="#tab-1" role="tab" data-toggle="tab">普洱茶</a></li>
-        <li><a href="#tab-2" role="tab" data-toggle="tab">龙井茶</a></li>
-        <li><a href="#tab-3" role="tab" data-toggle="tab">铁观音</a></li>
+      <li class="active"><a href="#tab-a" role="tab" data-toggle="tab">普洱茶</a></li>
+      <li><a href="#tab-b" role="tab" data-toggle="tab">龙井茶</a></li>
+        <li><a href="#tab-c" role="tab" data-toggle="tab">铁观音</a></li>
     </ul>
 
     <div class="tab-content">
-        <div class="tab-pane active" id="tab-1">
+        <div class="tab-pane active" id="tab-a">
             <div class="row feature">
                 <div class="col-md-7">
 
@@ -205,7 +212,7 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane" id="tab-2">
+        <div class="tab-pane" id="tab-b">
             <div class="row feature">
                 <div class="col-md-5">
                     <img class="feature-image img-responsive" src="images/long.jpg"
@@ -220,7 +227,7 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane" id="tab-3">
+        <div class="tab-pane" id="tab-c">
             <div class="row feature">
                 <div class="col-md-7">
 
