@@ -47,11 +47,14 @@
             <li><a href="#">龙井</a></li>
             <li><a href="#">铁观音</a></li>
             <li role="separator" class="divider"></li>
+
 <!--             <li><a href="#">Separated link</a></li>
  -->            <!-- <li role="separator" class="divider"></li> -->
 <!--             <li><a href="#">One more separated link</a></li>
  -->   </ul>
- </li>
+        </li>
+<!--         <li><a href="#" data-toggle="modal" data-target="#about-modal">关于我们</a></li>
+ -->
 </ul>
      <!--  <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -60,8 +63,8 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">关于我们</a></li>
-       <!--  <li class="dropdown">
+        <li><a href="#" data-toggle="modal" data-target="#about-modal">关于我们</a></li>
+        <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
@@ -161,7 +164,7 @@
   <p>普洱茶是以云南省一定区域内的云南大叶种晒青毛茶为原料，经过后发酵加工成的散茶和紧压茶。其外形色泽褐红；内质汤色红浓明亮，香气独特沉香，滋味醇厚回甘，叶底褐红。
     
   </p>
-  .col-md-4</div>
+  </div>
   <div class="col-md-4">
 <h2>龙井茶</h2>
 <img src="images/long.jpg">
@@ -169,68 +172,119 @@
 <p>
         龙井茶是汉族传统名茶，著名绿茶之一。产于浙江杭州西湖龙井村一带，已有一千二百余年历史。龙井茶色泽翠绿，香气浓郁，甘醇爽口，形如雀舌，即有“色绿、香郁、味甘、形美”四绝的特点。
       </p>
-  .col-md-4</div>
+  </div>
   <div class="col-md-4">
 <h2>铁观音</h2>
 
  <img src="images/tie.jpg">
       <p>铁观音原是茶树品种名，由于它适制乌龙茶，其乌龙茶成品遂亦名为铁观音。所谓铁观音茶即以铁观音品种茶树制成的乌龙茶，亦有一种说法称“铁观音”名称乃乾隆皇帝所赐。</p>
-  .col-md-4</div>
+  </div>
 </div>
 
+ <hr class="feature-divider">
 
-<ul class="nav  nav-tabs ">
-  <li role="presentation" class="active"><a href="#">普洱茶</a></li>
-  <li role="presentation"><a href="#">龙井茶</a></li>
-  <li role="presentation"><a href="#">铁观音</a></li>
-</ul>
- <div class="tab-con" >
-            <div class="row">
-                <div class="col-md-5">
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-1" role="tab" data-toggle="tab">普洱茶</a></li>
+        <li><a href="#tab-2" role="tab" data-toggle="tab">龙井茶</a></li>
+        <li><a href="#tab-3" role="tab" data-toggle="tab">铁观音</a></li>
+    </ul>
 
-                    <h2>普洱茶</h2>
-                    <img  src="images/puer.jpg" >
-
-                    
-                </div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-1">
+            <div class="row feature">
                 <div class="col-md-7">
-                    <p>普洱茶是以云南省一定区域内的云南大叶种晒青毛茶为原料，经过后发酵加工成的散茶和紧压茶。其外形色泽褐红；内质汤色红浓明亮，香气独特沉香，滋味醇厚回甘，叶底褐红。</p>
-                </div>
-            </div>
-            
-            <div class="row">
-                 <div class="col-md-7">
 
-                    <h2>龙井茶</h2>
+                    <h2 class="feature-heading"> <span
+                            class="text-muted"></span></h2>
 
-                    <p>龙井茶是汉族传统名茶，著名绿茶之一。产于浙江杭州西湖龙井村一带，已有一千二百余年历史。龙井茶色泽翠绿，香气浓郁，甘醇爽口，形如雀舌，即有“色绿、香郁、味甘、形美”四绝的特点。</p>
+                    <p class="lead">普洱茶是以云南省一定区域内的云南大叶种晒青毛茶为原料，经过后发酵加工成的散茶和紧压茶。其外形色泽褐红；内质汤色红浓明亮，香气独特沉香，滋味醇厚回甘，叶底褐红。</p>
                 </div>
                 <div class="col-md-5">
-                    <img  src="images/long.jpg">
-                </div>
-            </div>
-
-            <div class="row">
-                 <div class="col-md-5">
-
-                    <h2>铁观音</h2>
-                    <img  src="images/tie.jpg"
-                         >
-
-                   
-                </div>
-                <div class="col-md-7">
-                     <p>铁观音原是茶树品种名，由于它适制乌龙茶，其乌龙茶成品遂亦名为铁观音。所谓铁观音茶即以铁观音品种茶树制成的乌龙茶，亦有一种说法称“铁观音”名称乃乾隆皇帝所赐。</p>
+                    <img class="feature-image img-responsive" src="images/puer.jpg"
+                         alt="">
                 </div>
             </div>
         </div>
+        <div class="tab-pane" id="tab-2">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/long.jpg"
+                         alt="">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading"> <span class="text-muted">龙井茶</span>
+                    </h2>
+
+                    <p class="lead">龙井茶是汉族传统名茶，著名绿茶之一。产于浙江杭州西湖龙井村一带，已有一千二百余年历史。龙井茶色泽翠绿，香气浓郁，甘醇爽口，形如雀舌，即有“色绿、香郁、味甘、形美”四绝的特点。</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-3">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">铁观音 <span class="text-muted"></span></h2>
+
+                    <p class="lead">铁观音原是茶树品种名，由于它适制乌龙茶，其乌龙茶成品遂亦名为铁观音。所谓铁观音茶即以铁观音品种茶树制成的乌龙茶，亦有一种说法称“铁观音”名称乃乾隆皇帝所赐。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/tie.jpg"
+                         alt="">
+                </div>
+            </div>
+        </div>
+        
+       
+    </div>
+
+
+<div class="modal fade" id="about-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">山泉煮茶</h4>
+      </div>
+      <div class="modal-body">
+        <p>汴水东边杨柳花，春风散入五侯家。
+繁华一去江南远，闲汲山泉自煮茶&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">赞</button>
+<!--         <button type="button" class="btn btn-primary">Save changes</button>
+ -->      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+ <footer>
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+
+        <p>&copy; 2016 山泉煮茶 </p>
+    </footer>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
+<script>
+    $(function () {
+        $('#ad-carousel').carousel();
+        $('#menu-nav .navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            var tabId = $(this).attr('data-tab');
+            if ('#' !== href) {
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top - 70);
+                if (tabId) {
+                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
+                }
+            }
+        });
+    });
+</script>
 
   </body>
 </html>
