@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>选购</title>
+    <title>购物车</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,6 @@
         <li><a href="index.html">茶文化</a></li>
         <li><a href="order.html">选购</a></li>
         <li><a href="checkout.html">购物车</a></li>
-        
       </ul>
      <!--  <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -65,45 +64,9 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="row">
-  <div class="col-md-4">
-  <h2>普洱茶</h2>
-  <img src="images/puer.jpg">
-  <p>普洱茶是以云南省一定区域内的云南大叶种晒青毛茶为原料，经过后发酵加工成的散茶和紧压茶。其外形色泽褐红；内质汤色红浓明亮，香气独特沉香，滋味醇厚回甘，叶底褐红。
-    
-  </p>
-  <p><a class="btn btn-success" href="#" role="button">选购</a></p>
-  </div>
-  <div class="col-md-4">
-<h2>龙井茶</h2>
-<img src="images/long.jpg">
-<p>
-        龙井茶是汉族传统名茶，著名绿茶之一。产于浙江杭州西湖龙井村一带，已有一千二百余年历史。龙井茶色泽翠绿，香气浓郁，甘醇爽口，形如雀舌，即有“色绿、香郁、味甘、形美”四绝的特点。
-      </p>
-      <p><a class="btn btn-success" href="#" role="button">选购</a></p>
-  </div>
-  <div class="col-md-4">
-<h2>铁观音</h2>
 
- <img src="images/tie.jpg">
-      <p>铁观音原是茶树品种名，由于它适制乌龙茶，其乌龙茶成品遂亦名为铁观音。所谓铁观音茶即以铁观音品种茶树制成的乌龙茶，亦有一种说法称“铁观音”名称乃乾隆皇帝所赐。</p>
-      <p><a class="btn btn-success" href="#" role="button">选购</a></p>
-
-  </div>
-</div>
  
-  <table class="movie-table">
-        <tr>
-          <th class="column1">Name</th>
-          <th>Release Date</th>
-          <th>Director</th>
-          <th>Buy Ticket</th>
-        </tr>
-    </table>
-    <div class="text-center">
-      <a class="btn btn-info btn-lg btn-manage" href="add.html">Manage Movies</a>
-    </div>
-
+    
  <hr class="feature-divider">   
 <div class="modal fade" id="about-modal" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -124,6 +87,32 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<table class="movie-table">
+      <tr>
+        <th class="column1">Name</th>
+        <th>Release Date</th>
+        <th>Director</th>
+        <th>Buy Ticket</th>
+        <th>Remove</th>
+      </tr>
+  </table>
+  <div class="form-inline container text-center">
+    <div class="form-group">
+      <input type="text" class="form-control" id="name" placeholder="Movie Name">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="date" placeholder="Release Date">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="director" placeholder="Director">
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control" id="ticket" placeholder="Ticket Left">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary btn-lg" id="add-movie">Add Movie</button>
+  </div>
+  
  <footer>
         <p class="pull-right"><a href="index.html">首页</a></p>
 
@@ -138,6 +127,6 @@
 
  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
     <script src="js/jquery-1.12.1.min.js"></script>
-    <script src="js/checkout.js"></script>  
+    <script src="js/order.js"></script>  
   </body>
 </html>

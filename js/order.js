@@ -48,7 +48,7 @@ $('body').on('click', '.ticket-btn', function() {
     $($(this).find('span')).html(currentTicketNum);
     // set number of ticket left
     var currentMovieId = $(this).parent().parent().attr('id');
-    var currentMovie = new Firebase('https://llf9qvcffk4.firebaseio-demo.com/' + currentMovieId);
+    var currentMovie = new Firebase('https://intense-torch-9843.firebaseio.com/' + currentMovieId);
     // Modify the 'first' and 'last' children, but leave other data at fredNameRef unchanged
     currentMovie.update({ ticket: currentTicketNum });
   } else {
